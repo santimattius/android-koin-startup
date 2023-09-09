@@ -84,6 +84,9 @@ dependencies {
     implementation libs.room.runtime
     ksp libs.room.compiler
 
+    implementation libs.koin.android
+    implementation libs.koin.coroutines
+
     testImplementation libs.junit
     testImplementation libs.bundles.unitTesting
     androidTestImplementation libs.bundles.androidTesting
