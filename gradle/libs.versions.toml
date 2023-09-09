@@ -30,6 +30,9 @@ okhttp3IdlingResource = "1.0.0"
 glide = "4.12.0"
 mockk = "1.12.3"
 robolectric = "4.6"
+agp = "8.1.1"
+uiautomator = "2.2.0"
+benchmark-macro-junit4 = "1.2.0-beta05"
 
 [libraries]
 # Define the libraries
@@ -84,6 +87,8 @@ test_rule = { module = "androidx.test:rules", version = "1.5.0" }
 test_espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
 test_espresso_contrib = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoCore" }
 okHttp3_idling_resource = { module = "com.jakewharton.espresso:okhttp3-idling-resource", version.ref = "okhttp3IdlingResource" }
+uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiautomator" }
+benchmark-macro-junit4 = { group = "androidx.benchmark", name = "benchmark-macro-junit4", version.ref = "benchmark-macro-junit4" }
 
 [bundles]
 # Define bundles/groups of libraries
@@ -98,3 +103,4 @@ androidTesting = ["mockwebserver", "okHttp3.idling.resource", "mockk.android", "
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+com-android-test = { id = "com.android.test", version.ref = "agp" }
