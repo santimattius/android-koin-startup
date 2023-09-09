@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-kapt'
+    id 'com.google.devtools.ksp'
     id 'io.gitlab.arturbosch.detekt'
 }
 
@@ -11,7 +11,7 @@ def localProperties = new Properties()
 localProperties.load(new FileInputStream(rootProject.file("./local.properties")))
 
 android {
-    compileSdkVersion Integer.valueOf(target_sdk_version)
+    compileSdk Integer.valueOf(target_sdk_version)
     buildToolsVersion build_tools_version
 
     defaultConfig {
@@ -82,9 +82,9 @@ dependencies {
 
     implementation libs.room.ktx
     implementation libs.room.runtime
-    kapt libs.room.compiler
+    ksp libs.room.compiler
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation libs.junit
     testImplementation libs.bundles.unitTesting
     androidTestImplementation libs.bundles.androidTesting
 

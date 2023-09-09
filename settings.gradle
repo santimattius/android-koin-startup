@@ -17,7 +17,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "android-dependency-injection"
+rootProject.name = "android-koin-startup"
 include ':app'
-
-enableFeaturePreview("VERSION_CATALOGS")
