@@ -9,7 +9,7 @@ external dependencies.
 
 <p align="center">
 
-  <img wight="280" src="https://github.com/santimattius/android-testing/blob/master/screenshoot/entertainment_app.png?raw=true" alt="App Capture"/>
+  <img width="280" src="https://github.com/santimattius/android-testing/blob/master/screenshoot/entertainment_app.png?raw=true" alt="App Capture"/>
 
 </p>
 
